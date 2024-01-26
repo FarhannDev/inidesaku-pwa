@@ -1,95 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Container, Box, Text, Stack } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <Container maxW="max-content" centerContent bg="#fff" color="black">
+        <Box display={{ base: 'none', md: 'block' }} padding="4">
+          There are many benefits to a joint design and development system. Not
+          only does it bring benefits to the design team, but it also brings
+          benefits to engineering teams. It makes sure that our experiences have
+          a consistent look and feel, not just in our design specs, but in
+          production.
+        </Box>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <Stack spacing={3} marginTop={3} marginBottom={10}>
+          <Text fontSize="6xl">(6xl) In love with React & Next</Text>
+          <Text fontSize="5xl">(5xl) In love with React & Next</Text>
+          <Text fontSize="4xl">(4xl) In love with React & Next</Text>
+          <Text fontSize="3xl">(3xl) In love with React & Next</Text>
+          <Text fontSize="2xl">(2xl) In love with React & Next</Text>
+          <Text fontSize="xl">(xl) In love with React & Next</Text>
+          <Text fontSize="lg">(lg) In love with React & Next</Text>
+          <Text fontSize="md">(md) In love with React & Next</Text>
+          <Text fontSize="sm">(sm) In love with React & Next</Text>
+          <Text fontSize="xs">(xs) In love with React & Next</Text>
+        </Stack>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <Link href="/about">Go To About Page</Link>
+      </Container>
+    </>
   );
 }
