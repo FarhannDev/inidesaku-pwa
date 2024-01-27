@@ -6,6 +6,7 @@ import { Button, Form } from 'react-bootstrap';
 import { generateRandomOTP } from '@/utils/common/generateRandomOTP';
 import verify from '@/app/auth/verify/otp/verify.module.css';
 import styles from '@/app/auth/login/styles.module.css';
+import { useRouter } from 'next/navigation';
 
 type VerifyOTPProps = {
   register: UseFormRegister<any>;
@@ -23,6 +24,7 @@ export default function VerifyOTPInput(): JSX.Element {
   const [otp, setOTP] = useState<string[]>(['', '', '', '']);
   const [isOtpTimeout, setIsOtpTimeout] = useState<number>(120); // 2 minutes in milliseconds
   const randomOTP = generateRandomOTP(4);
+  const router = useRouter();
 
   useEffect(() => {
     const randomOTP = generateRandomOTP(4);
@@ -77,9 +79,10 @@ export default function VerifyOTPInput(): JSX.Element {
 
     // Lakukan verifikasi OTP di sini
     // Contoh: kirim OTP ke server dan bandingkan dengan yang dikirimkan ke pengguna\
-    alert(enteredOTP);
     setOTP(['', '', '', '']); // Clear OTP after the timeout
     setIsOtpTimeout(0);
+
+    router.replace('/auth/verify/profile');
   };
 
   return (
