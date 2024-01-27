@@ -1,12 +1,6 @@
+import { fonts } from '@/utils/common/fonts';
 import { Providers } from './providers';
-import { Inter, Poppins } from 'next/font/google';
 import type { Metadata } from 'next';
-
-// const inter = Inter({ subsets: ['latin'] });
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-});
 
 export const metadata: Metadata = {
   title: 'Inidesaku PWA',
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={fonts.poppins.variable}>
         <Providers>{children}</Providers>
       </body>
     </html>
