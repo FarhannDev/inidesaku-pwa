@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react';
+import { Container } from 'react-bootstrap';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -26,17 +26,5 @@ export default function OnboardingLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <Container
-      display="flex"
-      justifyContent="center"
-      alignContent="center"
-      maxW="lg"
-      w="auto"
-      paddingTop={10}
-      paddingBottom={10}
-    >
-      {children}
-    </Container>
-  );
+  return <Container>{children}</Container>;
 }

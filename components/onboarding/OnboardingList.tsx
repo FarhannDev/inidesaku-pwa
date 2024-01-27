@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@/styles/onboarding.css';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 type OnboardingListProps = { onboarding: OnboardingType[] };
 
@@ -21,8 +21,12 @@ export default function OnboardingList({ onboarding }: OnboardingListProps) {
           el: '.swiper-pagination',
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper "
       >
         {onboarding.map((onboard, index) => (
           <SwiperSlide key={index}>
@@ -31,8 +35,8 @@ export default function OnboardingList({ onboarding }: OnboardingListProps) {
         ))}
         <div className="swiper-pagination"></div>
       </Swiper>
-
-      {/* {onboarding.map((onboard, index) => (
+      {/* 
+      {onboarding.slice(0, 1).map((onboard, index) => (
         <OnboardingItem key={index} {...onboard} />
       ))} */}
     </>

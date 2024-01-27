@@ -1,11 +1,7 @@
-/* Custom styling for pagination */
-/* .swiper-container {
-  position: relative;
-} */
 .swiper-pagination {
   position: absolute;
   top: 60% !important;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   height: 50px;
   padding: 10px;
 }
@@ -20,4 +16,14 @@
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .swiper-pagination {
+    position: absolute;
+    top: 30% !important;
+    right: 0 !important;
+    left: 195px !important;
+    margin-top: 20px;
+  }
 }

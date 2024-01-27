@@ -1,6 +1,6 @@
 import { fonts } from '@/utils/common/fonts';
-import { Providers } from './providers';
 import type { Metadata } from 'next';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata: Metadata = {
   title: 'Inidesaku PWA',
@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fonts.poppins.variable}>
-        <Providers>{children}</Providers>
-      </body>
+      <body className={fonts.poppins.variable}>{children}</body>
     </html>
   );
 }
