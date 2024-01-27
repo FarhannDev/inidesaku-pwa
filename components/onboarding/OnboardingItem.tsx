@@ -36,7 +36,7 @@ export default function OnboardingItem({
 
           <Stack direction="vertical" gap={3} className="py-5 mt-5">
             <Link
-              href="/sign"
+              href="/auth/login"
               aria-label="masuk"
               title="masuk"
               className={styles.onboardingLoginBtn}
@@ -44,9 +44,9 @@ export default function OnboardingItem({
               Masuk
             </Link>
             <Link
-              href="/signup"
-              aria-label="masuk"
-              title="masuk"
+              href="/auth/register"
+              aria-label="Daftar"
+              title="Daftar"
               className={styles.onboardingRegisterBtn}
             >
               Daftar
