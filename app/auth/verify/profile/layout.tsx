@@ -26,5 +26,5 @@ export default function AuthLoginLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <Container className="py-5">{children}</Container>;
+  return <Container className="py-5 mt-5">{children}</Container>;
 }

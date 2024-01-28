@@ -1,16 +1,20 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+'use client';
+
+import OnboardingList from '@/components/onboarding/OnboardingList';
+import { onboardingSlide } from '@/utils/data/localDataOnboarding';
+import { Card, Col, Row, Container } from 'react-bootstrap';
+import styles from '@/styles/onboarding.module.css';
 
 export default function Home() {
   return (
-    <>
-      <Flex>
-        <Heading>Kontol</Heading>
-        <Heading>Kontol</Heading>
-      </Flex>
-      <Box display="flex" justifyContent="center" alignContent="center">
-        <Heading>Kontol</Heading>
-        <Heading>Kontol</Heading>
-      </Box>
-    </>
+    <Container>
+      <Row className="justify-content-center mt-5 pt-5">
+        <Col lg={10}>
+          <Card body className={styles.card}>
+            <OnboardingList onboarding={onboardingSlide} />
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }

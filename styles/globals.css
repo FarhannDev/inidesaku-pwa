@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +104,28 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* Custom CSS untuk Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tooltip .tooltip-inner {
+  background: var(--Primary-500, #40a752); /* Warna latar tooltip */
+  border-radius: 50px; /* Sudut pinggiran tooltip */
+  padding: 8px 12px; /* Padding dalam tooltip */
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+  vertical-align: middle;
+}
+
+.tooltip .tooltip-arrow {
+  display: none;
 }
