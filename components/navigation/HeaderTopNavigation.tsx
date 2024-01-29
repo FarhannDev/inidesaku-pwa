@@ -31,9 +31,14 @@ export default function HeaderTopNavigation() {
       link: '/',
     },
     {
+      title: 'Program',
+      icons: <HiOutlineHome fontSize={26} color="#fff" />,
+      link: '/program',
+    },
+    {
       title: 'Profile Desa',
       icons: <HiOutlineBuildingOffice2 fontSize={26} color="#fff" />,
-      link: '/',
+      link: '/profile-desa',
     },
     {
       title: 'Geopoint',

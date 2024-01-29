@@ -9,3 +9,11 @@ type FaqQuestionUserType = {
   email: string;
   question: string;
 };
+
+type ProgramFeatureType = {
+  id: string | number;
+  name: string;
+  description: string;
+  tag: string;
+  icons: string;
+};

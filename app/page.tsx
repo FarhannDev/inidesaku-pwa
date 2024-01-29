@@ -5,6 +5,7 @@ import FaqItemList from '@/components/faq/FaqItemList';
 import OnboardingList from '@/components/onboarding/OnboardingList';
 import { faqQuestionData } from '@/utils/data/localDataFaqQuestion';
 import { onboardingSlide } from '@/utils/data/localDataOnboarding';
+import { programFeature } from '@/utils/data/localDataProgramFeature';
 import Image from 'next/image';
 import { Col, Container, Row, Stack } from 'react-bootstrap';
 import {
@@ -25,7 +26,7 @@ export default function Home() {
       <section className="section-program-feature py-5">
         <Container>
           <h1 className="heading">Program Dan Kegiatan Unggulan Inidesaku</h1>
-          <ProgramFeaturedList />
+          <ProgramFeaturedList programs={programFeature} />
         </Container>
       </section>
       <section className="section-about py-5">

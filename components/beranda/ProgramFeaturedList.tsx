@@ -1,4 +1,4 @@
-import { Button, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import ProgramFeaturedItem from './ProgramFeaturedItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -8,7 +8,11 @@ import '@/styles/custom-swiper-navigation.css';
 
 import { Navigation } from 'swiper/modules';
 
-export default function ProgramFeaturedList() {
+type ProgramFeaturedListProps = { programs: ProgramFeatureType[] };
+
+export default function ProgramFeaturedList({
+  programs,
+}: ProgramFeaturedListProps) {
   return (
     <Row className="justify-content-start g-3 ">
       <Col>
@@ -38,24 +42,11 @@ export default function ProgramFeaturedList() {
             modules={[Navigation]}
             className="mySwiper pt-4 position-relative "
           >
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProgramFeaturedItem />
-            </SwiperSlide>
+            {programs.map((program) => (
+              <SwiperSlide key={program.id}>
+                <ProgramFeaturedItem {...program} />
+              </SwiperSlide>
+            ))}
 
             <div className="custom-navigation">
               <div className="swiper-button-prev"></div>
