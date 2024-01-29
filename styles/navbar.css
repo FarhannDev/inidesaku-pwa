@@ -4,6 +4,10 @@
   background: var(--Primary-500, #40a752);
 }
 
+.navbar .container {
+  width: 100%;
+}
+
 .navbar .navbar-brand span {
   color: #fff;
   font-size: 22px;
@@ -21,4 +25,24 @@
   background-position: center;
   object-fit: cover;
   margin-right: 16px;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+  .navbar .container {
+    width: 1200px;
+  }
+
+  .navbar .navbar-brand {
+    margin: 0;
+  }
 }

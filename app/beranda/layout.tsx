@@ -8,7 +8,6 @@ export default function BerandaLayout({
 }) {
   return (
     <>
-      <HeaderTopNavigation />
       <Container className="py-5 mt-5">{children}</Container>
     </>
   );

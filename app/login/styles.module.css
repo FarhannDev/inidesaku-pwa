@@ -1,0 +1,148 @@
+.card {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.avatar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--Font-400, #8a94a6);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: 0.08px;
+}
+
+.formInput {
+  display: flex;
+  width: 100%;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--Font-300, #b3b9c6);
+  border-left: 0;
+}
+
+.formInput::placeholder {
+  color: var(--Font-400, #8a94a6);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+}
+.formInputIcon {
+  background-color: transparent;
+  border: 1px solid var(--Font-300, #b3b9c6);
+}
+
+.customButtonLogin {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-500, #40a752);
+  background: var(--Primary-500, #40a752);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 100%;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.customButtonLogin:hover {
+  background: var(--Primary-500, #40a752);
+  border: 1px solid var(--Primary-500, #40a752);
+}
+
+.customButtonLogin:focus {
+  background: var(--Primary-500, #40a752) !important;
+  border: 1px solid var(--Primary-500, #40a752) !important;
+}
+
+.customButtonLogin:disabled {
+  border-radius: 8px;
+  border: 1px solid var(--Font-200, #d7dae0);
+  background: var(--Font-200, #d7dae0);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.customForgetPassword {
+  color: var(--Font-500, #667085);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.018px;
+  text-decoration: none;
+}
+
+.customForgetPassword:hover {
+  text-decoration: underline;
+}
+
+.customOtherText {
+  color: var(--Font-400, #8a94a6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.018px;
+}
+
+.customButtonOauth {
+  display: flex;
+  width: 100%;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 0.5px solid var(--Font-500, #667085) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: #fff !important;
+  margin: 5px;
+}
+
+.customGuestButton {
+  /* display: flex; */
+  /* padding: 12px 16px; */
+  /* justify-content: center;
+  align-items: center; */
+  color: var(--Primary-500, #40a752);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  text-decoration: none;
+  text-align: center;
+}

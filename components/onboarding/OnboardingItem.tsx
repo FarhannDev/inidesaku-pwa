@@ -18,7 +18,7 @@ export default function OnboardingItem({
 }: OnboardingItemProps) {
   return (
     <>
-      <Row className="justify-content-arround align-self-center align-items-center g-3 py-4">
+      <Row className="justify-content-center align-self-center align-items-center g-4">
         <Col lg={6} xl={6} md={12}>
           <Image
             src={images}
@@ -29,14 +29,13 @@ export default function OnboardingItem({
             priority
             className={styles.avatar}
           />
-        </Col>
-        <Col ld={6} xl={6} md={12}>
+
           <h2 className={styles.heading}>{title}</h2>
           <h3 className={styles.subheading}>{description}</h3>
 
           <Stack direction="vertical" gap={3} className="py-5 mt-5">
             <Link
-              href="/auth/login"
+              href="/login"
               aria-label="masuk"
               title="masuk"
               className={styles.onboardingLoginBtn}
@@ -44,7 +43,7 @@ export default function OnboardingItem({
               Masuk
             </Link>
             <Link
-              href="/auth/register"
+              href="/register"
               aria-label="Daftar"
               title="Daftar"
               className={styles.onboardingRegisterBtn}
@@ -52,16 +51,17 @@ export default function OnboardingItem({
               Daftar
             </Link>
 
-            <Link
+            {/* <Link
               href="/"
               aria-label="masuk sebagai tamu"
               title="masuk sebagai tamu"
               className={styles.onboardingGuestBtn}
             >
               Masuk Sebagai Tamu
-            </Link>
+            </Link> */}
           </Stack>
         </Col>
+        {/* <Col ld={6} xl={6} md={12}></Col> */}
       </Row>
     </>
   );

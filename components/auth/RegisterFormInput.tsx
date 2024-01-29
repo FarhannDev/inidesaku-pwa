@@ -119,7 +119,7 @@ export default function RegisterFormInput() {
         <div className="mx-auto text-center g-3">
           <div className={styles.customOtherText}>
             Sudah mempunyai akun?{' '}
-            <Link href="/auth/login" className={styles.customGuestButton}>
+            <Link href="/login" className={styles.customGuestButton}>
               Masuk{' '}
             </Link>
           </div>

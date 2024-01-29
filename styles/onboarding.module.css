@@ -76,10 +76,11 @@
   font-family: Poppins;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
+  font-weight: 600;
+  line-height: 26px;
   text-align: center;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 
 .subheading {
@@ -88,7 +89,7 @@
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.08px;
   margin-bottom: 30px;
@@ -106,4 +107,15 @@
   object-fit: cover;
   object-position: center;
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    font-family: Poppins;
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
 }

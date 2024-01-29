@@ -1,11 +1,8 @@
-import { fonts } from '@/utils/common/fonts';
+import { Container } from 'react-bootstrap';
 import type { Metadata } from 'next';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@/styles/navbar.css';
-import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: ' Beranda - Inidesaku',
+  title: 'Masuk ke akun -  Inidesaku',
   description: `Selamat datang. Membangun desa juara di Indonesia? Ayo bergabung bersama kami!. Memajukan ekonomi desa. Melalui pemberdayaan masyarakat desa di bidang ekonomi, sosial dan budaya!. Kegiatan desa. Menginformasikan pelaksanaan kegiatan yang berlangsung di Desa!. Pesona desa. Menginformasikan budaya lokal, wisata desa dan produk unggulan dari desa`,
   keywords: [
     'Selamat datang',
@@ -23,14 +20,11 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-export default function RootLayout({
-  children,
-}: Readonly<{
+
+export default function AuthLoginLayout({
+  children, // will be a page or nested layout
+}: {
   children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={fonts.poppins.variable}>{children}</body>
-    </html>
-  );
+}) {
+  return <Container className="py-5 mt-5">{children}</Container>;
 }

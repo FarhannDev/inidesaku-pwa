@@ -162,7 +162,7 @@ export default function LoginFormInput() {
         <div className="mx-auto text-center g-3">
           <div className={styles.customOtherText}>
             Belum mempunyai akun?{' '}
-            <Link href="/auth/register" className={styles.customGuestButton}>
+            <Link href="/register" className={styles.customGuestButton}>
               Daftar{' '}
             </Link>
           </div>

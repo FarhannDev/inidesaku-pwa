@@ -54,20 +54,22 @@ export default function HeaderTopNavigation() {
 
   const MenuItem = () =>
     menu.map((menu, idx) => (
-      <OverlayTrigger
+      <Link
         key={idx}
-        placement="bottom"
-        delay={{ show: 250, hide: 400 }}
-        overlay={renderTooltip(menu.title)}
+        href={menu.link}
+        className="mx-md-2 nav-link"
+        aria-label={menu.title}
       >
-        <Link
-          href={menu.link}
-          className="mx-md-3 nav-link"
-          aria-label={menu.title}
-        >
-          {menu.icons}
-        </Link>
-      </OverlayTrigger>
+        {menu.title}
+      </Link>
+      // <OverlayTrigger
+      //   key={idx}
+      //   placement="bottom"
+      //   delay={{ show: 250, hide: 400 }}
+      //   overlay={renderTooltip(menu.title)}
+      // >
+
+      // </OverlayTrigger>
     ));
 
   return (
@@ -84,7 +86,7 @@ export default function HeaderTopNavigation() {
 
           <span>INIDESAKU</span>
         </Navbar.Brand>
-        <Nav className="me-auto d-none d-lg-flex justify-content-start align-item-center">
+        <Nav className="mx-end d-none d-lg-flex justify-content-start align-item-center">
           <MenuItem />
         </Nav>
       </Container>

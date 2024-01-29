@@ -11,34 +11,28 @@ type OnboardingListProps = { onboarding: OnboardingType[] };
 
 export default function OnboardingList({ onboarding }: OnboardingListProps) {
   return (
-    <>
-      <Swiper
-        slidesPerView={1}
-        centeredSlides={true}
-        spaceBetween={10}
-        grabCursor={true}
-        pagination={{
-          el: '.swiper-pagination',
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper "
-      >
-        {onboarding.map((onboard, index) => (
-          <SwiperSlide key={index}>
-            <OnboardingItem {...onboard} />
-          </SwiperSlide>
-        ))}
-        <div className="swiper-pagination"></div>
-      </Swiper>
-      {/* 
-      {onboarding.slice(0, 1).map((onboard, index) => (
-        <OnboardingItem key={index} {...onboard} />
-      ))} */}
-    </>
+    <Swiper
+      slidesPerView={1}
+      centeredSlides={true}
+      spaceBetween={10}
+      grabCursor={true}
+      pagination={{
+        el: '.swiper-pagination',
+        clickable: true,
+      }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
+      className="mySwiper py-5 "
+    >
+      {onboarding.map((onboard, index) => (
+        <SwiperSlide key={index}>
+          <OnboardingItem {...onboard} />
+        </SwiperSlide>
+      ))}
+      <div className="swiper-pagination "></div>
+    </Swiper>
   );
 }
