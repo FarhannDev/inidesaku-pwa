@@ -1,6 +1,8 @@
-import { Button, Card, Stack } from 'react-bootstrap';
-import '@/styles/program-featured.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Card, Stack } from 'react-bootstrap';
+import { HiArrowUpRight } from 'react-icons/hi2';
+import '@/styles/program-featured.css';
 
 type ProgramFeaturedItemProps = ProgramFeatureType;
 
@@ -29,13 +31,9 @@ export default function ProgramFeaturedItem({
         </div>
       </Stack>
 
-      <Button
-        type="button"
-        variant="dark"
-        className="program-featured__actionbtn"
-      >
-        Selengkapnya -
-      </Button>
+      <Link href="/" className="program-featured__actionbtn">
+        Selengkapnya <HiArrowUpRight fontSize={22} color="#fff" />
+      </Link>
     </Card>
   );
 }

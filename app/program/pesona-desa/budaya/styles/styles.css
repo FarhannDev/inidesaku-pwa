@@ -1,0 +1,8 @@
+.pesona-budaya-heading {
+  color: var(--Primary-500, #40a752);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.035px;
+}

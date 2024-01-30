@@ -39,6 +39,20 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+
+html {
+  width: 100%;
+  min-height: 100vh;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+}
+
 /* Custom CSS untuk Tooltip */
 .tooltip {
   position: relative;
@@ -145,4 +159,15 @@ main {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 60px;
+  height: 60px;
+  background: var(--Primary-500, #40a752);
+  z-index: 9999;
+  border: 1px solid var(--Font-300, #b3b9c6);
 }

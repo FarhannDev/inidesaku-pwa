@@ -17,3 +17,26 @@ type ProgramFeatureType = {
   tag: string;
   icons: string;
 };
+
+type PesonaNewsType = {
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  cover: string;
+  user: string;
+  totalViews: number;
+  createdAt: string;
+};
+
+type PesonaDesaBudayaType = {
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  cover: string;
+  imageUrl: string[];
+  user: string;
+  totalViews: number;
+  createdAt: string;
+};
