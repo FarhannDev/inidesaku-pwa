@@ -40,3 +40,14 @@ type PesonaDesaBudayaType = {
   totalViews: number;
   createdAt: string;
 };
+
+type ProgramLayananDesaType = {
+  id: string;
+  slug: string;
+  title: string;
+  cover: string;
+  content: string;
+  location: string;
+  date: string;
+  categories: string;
+};
