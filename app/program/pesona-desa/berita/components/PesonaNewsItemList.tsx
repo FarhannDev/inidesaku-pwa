@@ -3,7 +3,7 @@ import PesonaNewsItem from './PesonaNewsItem';
 import { Col, Row } from 'react-bootstrap';
 
 type PesonaNewsItemListProps = {
-  news: PesonaNewsType[];
+  news: PesonaDesaBerita[];
 };
 
 export default function PesonaNewsItemList({ news }: PesonaNewsItemListProps) {

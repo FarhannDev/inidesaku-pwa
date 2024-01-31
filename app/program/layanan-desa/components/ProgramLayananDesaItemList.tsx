@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import ProgramLayananDesaItem from './ProgramLayananDesaItem';
 
 type ProgramLayananDesaItemListProps = {
-  programs: ProgramLayananDesaType[];
+  programs: LayananDesa[];
 };
 
 export default function ProgramLayananDesaItemList({

@@ -23,7 +23,6 @@ export default function SearchBar({
           <Form.Control
             type="search"
             className="searchbar-input"
-            autoFocus
             autoComplete="true"
             placeholder={placeholder}
             aria-label={placeholder}

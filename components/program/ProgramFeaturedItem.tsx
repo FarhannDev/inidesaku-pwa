@@ -4,12 +4,13 @@ import { Card, Stack } from 'react-bootstrap';
 import { HiArrowUpRight } from 'react-icons/hi2';
 import '@/styles/program-featured.css';
 
-type ProgramFeaturedItemProps = ProgramFeatureType;
+type ProgramFeaturedItemProps = ProgramFeature;
 
 export default function ProgramFeaturedItem({
   name,
   description,
   icons,
+  links,
 }: ProgramFeaturedItemProps) {
   return (
     <Card body className="program-featured-item">
@@ -17,7 +18,7 @@ export default function ProgramFeaturedItem({
         src={icons}
         width={60}
         height={60}
-        alt=""
+        alt={name}
         className="img-fluid program-featured__images"
         priority
       />
@@ -31,7 +32,11 @@ export default function ProgramFeaturedItem({
         </div>
       </Stack>
 
-      <Link href="/" className="program-featured__actionbtn">
+      <Link
+        href={links}
+        aria-label="selengkapnya"
+        className="program-featured__actionbtn"
+      >
         Selengkapnya <HiArrowUpRight fontSize={22} color="#fff" />
       </Link>
     </Card>

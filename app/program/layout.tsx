@@ -1,4 +1,3 @@
-import { Container } from 'react-bootstrap';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -21,10 +20,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AuthLoginLayout({
+export default function Layout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
-  return <Container className="py-5 mt-5">{children}</Container>;
+  return children;
 }

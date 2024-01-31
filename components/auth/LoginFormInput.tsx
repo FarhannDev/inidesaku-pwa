@@ -1,6 +1,6 @@
 'use client';
 import { Button, Form, InputGroup, Stack } from 'react-bootstrap';
-import styles from '@/app/auth/login/styles.module.css';
+import styles from '@/app/(auth)/login/styles.module.css';
 import Link from 'next/link';
 
 export default function LoginFormInput() {

@@ -4,7 +4,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <div id="__next">
       <HeaderTopNavigation />
-      <main>{children}</main>
+      {children}
     </div>
   );
 }

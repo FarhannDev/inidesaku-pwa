@@ -8,7 +8,7 @@ import { HiOutlineClock, HiOutlineUser, HiOutlineEye } from 'react-icons/hi';
 import { postedAt } from '@/utils/common/generateFormattedDate';
 import '@/app/program/pesona-desa/berita/styles/pesona-news.css';
 
-type PesonaBudayaItemForYouProps = PesonaDesaBudayaType;
+type PesonaBudayaItemForYouProps = PesonaDesaBudaya;
 
 export default function PesonaBudayaItemForYou({
   id,

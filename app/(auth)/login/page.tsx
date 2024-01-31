@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Card, Col, Row, Stack } from 'react-bootstrap';
-import styles from './styles.module.css';
+import styles from '../login/styles.module.css';
 import LoginFormInput from '@/components/auth/LoginFormInput';
 
 export default function Login() {

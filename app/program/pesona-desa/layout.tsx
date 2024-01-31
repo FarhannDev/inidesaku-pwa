@@ -1,8 +1,10 @@
-import { Container } from 'react-bootstrap';
 import type { Metadata } from 'next';
+import { Breadcrumb, Container } from 'react-bootstrap';
+import Link from 'next/link';
+import BreadcrumbItem from '@/components/shared/BreadcrumbItem';
 
 export const metadata: Metadata = {
-  title: 'Pendaftaran Akun -  Inidesaku',
+  title: 'Pesona  Desa -  Inidesaku',
   description: `Selamat datang. Membangun desa juara di Indonesia? Ayo bergabung bersama kami!. Memajukan ekonomi desa. Melalui pemberdayaan masyarakat desa di bidang ekonomi, sosial dan budaya!. Kegiatan desa. Menginformasikan pelaksanaan kegiatan yang berlangsung di Desa!. Pesona desa. Menginformasikan budaya lokal, wisata desa dan produk unggulan dari desa`,
   keywords: [
     'Selamat datang',
@@ -21,10 +23,34 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AuthLoginLayout({
+const breadcrumbItem: BreadcrumbItem[] = [
+  {
+    name: 'Berita Desa',
+    url: '/program/pesona-desa' || '/program/pesona-desa/berita',
+  },
+  {
+    name: 'Potensi Desa',
+    url: '/program/pesona-desa/potensi',
+  },
+  {
+    name: 'Budaya Lokal',
+    url: '/program/pesona-desa/budaya',
+  },
+  {
+    name: 'Wisata Lokal',
+    url: '/program/pesona-desa/wisata',
+  },
+];
+
+export default function Layout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
-  return <Container className="py-5 mt-5">{children}</Container>;
+  return (
+    <Container className="position-relative py-5 mt-5">
+      <BreadcrumbItem menus={breadcrumbItem} />
+      {children}
+    </Container>
+  );
 }

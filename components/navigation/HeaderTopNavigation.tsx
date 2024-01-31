@@ -2,28 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  Container,
-  Nav,
-  Navbar,
-  OverlayTrigger,
-  Tooltip,
-} from 'react-bootstrap';
-import {
-  HiOutlineHome,
-  HiOutlineBuildingOffice2,
-  HiOutlineMap,
-  HiOutlineShoppingCart,
-  HiOutlineUser,
-} from 'react-icons/hi2';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { HiOutlineHome } from 'react-icons/hi2';
 
 export default function HeaderTopNavigation() {
-  const renderTooltip = (props: any) => (
-    <Tooltip id="button-tooltip" {...props}>
-      {props}
-    </Tooltip>
-  );
-
   const menu = [
     {
       title: 'Beranda',
@@ -36,25 +18,30 @@ export default function HeaderTopNavigation() {
       link: '/program',
     },
     {
-      title: 'Profile Desa',
-      icons: <HiOutlineBuildingOffice2 fontSize={26} color="#fff" />,
-      link: '/profile-desa',
-    },
-    {
-      title: 'Geopoint',
-      icons: <HiOutlineMap fontSize={26} color="#fff" />,
+      title: 'Pusat Bantuan',
+      icons: <HiOutlineHome fontSize={26} color="#fff" />,
       link: '/',
     },
-    {
-      title: 'PPOB',
-      icons: <HiOutlineShoppingCart fontSize={26} color="#fff" />,
-      link: '/',
-    },
-    {
-      title: 'Profile',
-      icons: <HiOutlineUser fontSize={26} color="#fff" />,
-      link: '/',
-    },
+    // {
+    //   title: 'Profile Desa',
+    //   icons: <HiOutlineBuildingOffice2 fontSize={26} color="#fff" />,
+    //   link: '/',
+    // },
+    // {
+    //   title: 'Geopoint',
+    //   icons: <HiOutlineMap fontSize={26} color="#fff" />,
+    //   link: '/',
+    // },
+    // {
+    //   title: 'PPOB',
+    //   icons: <HiOutlineShoppingCart fontSize={26} color="#fff" />,
+    //   link: '/',
+    // },
+    // {
+    //   title: 'Profile',
+    //   icons: <HiOutlineUser fontSize={26} color="#fff" />,
+    //   link: '/',
+    // },
   ];
 
   const MenuItem = () =>
@@ -67,14 +54,6 @@ export default function HeaderTopNavigation() {
       >
         {menu.title}
       </Link>
-      // <OverlayTrigger
-      //   key={idx}
-      //   placement="bottom"
-      //   delay={{ show: 250, hide: 400 }}
-      //   overlay={renderTooltip(menu.title)}
-      // >
-
-      // </OverlayTrigger>
     ));
 
   return (
@@ -91,7 +70,7 @@ export default function HeaderTopNavigation() {
 
           <span>INIDESAKU</span>
         </Navbar.Brand>
-        <Nav className="mx-end d-none d-lg-flex justify-content-start align-item-center">
+        <Nav className="me-auto d-none d-lg-flex justify-content-start align-item-center">
           <MenuItem />
         </Nav>
       </Container>

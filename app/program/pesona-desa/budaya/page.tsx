@@ -33,7 +33,7 @@ export default function BudayaLokal(): React.JSX.Element {
     setSearchKeyword(keyword);
   };
 
-  const filteredItem: PesonaDesaBudayaType[] = pesonaDesaBudayaData?.filter(
+  const filteredItem: PesonaDesaBudaya[] = pesonaDesaBudayaData?.filter(
     (item) => item.title.toLowerCase().includes(searchKeyword?.toLowerCase())
   );
 

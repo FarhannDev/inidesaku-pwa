@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import generateCreateSlug from '../common/generateCreateSlug';
 
-const layananDesaData: ProgramLayananDesaType[] = [
+const layananDesaData: LayananDesa[] = [
   {
     id: `${generateCreateSlug(
       'Pemerintahan dan administrasi desa'
@@ -112,4 +112,22 @@ const layananDesaData: ProgramLayananDesaType[] = [
   },
 ];
 
-export { layananDesaData };
+const contentDetail = [
+  {
+    title: 'Persyaratan',
+    content:
+      'Membawa KTP, surat pindah, akta kelahiran dan akta kematian, surat keterangan domisili, pernyataan penghasilan, surat izin mendirikan bangunan. ',
+  },
+  {
+    title: 'Rincian pelayanan',
+    content:
+      'Pelayanan Pemerintahan dan Administrasi Desa mencakup sejumlah kegiatan yang menggarisbawahi kelancaran pengelolaan administrasi serta kebijakan di tingkat desa. Pertama, dilakukan penataan data penduduk dan pembuatan dokumen administratif seperti Kartu Keluarga dan Akta Kelahiran.',
+  },
+  {
+    title: 'Manfaat pelayanan',
+    content:
+      'Kegiatan Pemerintahan dan Administrasi Desa memiliki peran sentral dalam menyelenggarakan pelayanan desa yang efisien dan efektif. Melalui pengelolaan administrasi yang baik, pemerintahan desa mampu menciptakan lingkungan yang kondusif untuk pengembangan berbagai inisiatif dan program. ',
+  },
+];
+
+export { layananDesaData, contentDetail };

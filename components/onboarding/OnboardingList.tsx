@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import '@/styles/onboarding.css';
 import { Pagination, Autoplay } from 'swiper/modules';
 
-type OnboardingListProps = { onboarding: OnboardingType[] };
+type OnboardingListProps = { onboarding: Onboarding[] };
 
 export default function OnboardingList({ onboarding }: OnboardingListProps) {
   return (

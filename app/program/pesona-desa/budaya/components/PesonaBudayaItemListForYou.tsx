@@ -5,7 +5,7 @@ import '../styles/styles.css';
 import PesonaBudayaHeading from './PesonaBudayaHeading';
 
 type PesonaBudayaItemListForYouProps = {
-  budaya: PesonaDesaBudayaType[];
+  budaya: PesonaDesaBudaya[];
   heading: string;
 };
 

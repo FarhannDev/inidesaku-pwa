@@ -1,4 +1,4 @@
-const onboardingSlide: OnboardingType[] = [
+const onboardingSlide: Onboarding[] = [
   {
     title: 'Selamat Datang',
     description: `Membangun desa juara di Indonesia? 

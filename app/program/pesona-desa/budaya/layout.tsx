@@ -1,8 +1,10 @@
-import { Container } from 'react-bootstrap';
+import HeaderTopNavigation from '@/components/navigation/HeaderTopNavigation';
 import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Container } from 'react-bootstrap';
 
 export const metadata: Metadata = {
-  title: 'Masuk ke akun -  Inidesaku',
+  title: 'Berita Desa -  Inidesaku',
   description: `Selamat datang. Membangun desa juara di Indonesia? Ayo bergabung bersama kami!. Memajukan ekonomi desa. Melalui pemberdayaan masyarakat desa di bidang ekonomi, sosial dan budaya!. Kegiatan desa. Menginformasikan pelaksanaan kegiatan yang berlangsung di Desa!. Pesona desa. Menginformasikan budaya lokal, wisata desa dan produk unggulan dari desa`,
   keywords: [
     'Selamat datang',
@@ -21,10 +23,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AuthLoginLayout({
+export default function Layout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
-  return <Container className="py-5 mt-5">{children}</Container>;
+  return children;
 }

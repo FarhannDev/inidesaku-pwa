@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useState } from 'react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import {
@@ -8,11 +7,11 @@ import {
   useSearchParams,
 } from 'next/navigation';
 import { pesonaDesaBeritaData } from '@/utils/data/localDataPesonaDesa';
-import SearchBar from './components/SearchBar';
-import PesonaNewsItemList from './components/PesonaNewsItemList';
-import SearchBarIsEmpty from './components/SearchBarIsEmpty';
+import SearchBar from '@/components/shared/SearchBar';
+import PesonaNewsItemList from './berita/components/PesonaNewsItemList';
+import SearchBarIsEmpty from '@/components/shared/SearchBarIsEmpty';
 
-export default function BeritaDesa(): React.JSX.Element {
+export default function PesonaDesa() {
   const router: AppRouterInstance = useRouter();
   const searchParams: ReadonlyURLSearchParams = useSearchParams();
   const [searchKeyword, setSearchKeyword] = useState<string>(
@@ -33,10 +32,9 @@ export default function BeritaDesa(): React.JSX.Element {
     setSearchKeyword(keyword);
   };
 
-  const filteredItem: PesonaDesaBerita[] = pesonaDesaBeritaData?.filter(
-    (item) => item.title.toLowerCase().includes(searchKeyword?.toLowerCase())
+  const filteredItem: PesonaNewsType[] = pesonaDesaBeritaData?.filter((item) =>
+    item.title.toLowerCase().includes(searchKeyword?.toLowerCase())
   );
-
   return (
     <>
       <SearchBar

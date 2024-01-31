@@ -8,7 +8,7 @@ import { HiOutlineClock, HiOutlineUser, HiOutlineEye } from 'react-icons/hi';
 import { postedAt } from '@/utils/common/generateFormattedDate';
 import '../styles/pesona-news.css';
 
-type PesonaNewsItemProps = PesonaNewsType;
+type PesonaNewsItemProps = PesonaDesaBerita;
 
 export default function PesonaNewsItem({
   id,

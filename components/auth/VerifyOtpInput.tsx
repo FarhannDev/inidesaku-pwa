@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, ChangeEvent, useEffect, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 import { UseFormRegister, useForm } from 'react-hook-form';
 import { Button, Form } from 'react-bootstrap';
 import { generateRandomOTP } from '@/utils/common/generateRandomOTP';
-import verify from '@/app/auth/verify/otp/verify.module.css';
-import styles from '@/app/auth/login/styles.module.css';
-import { useRouter } from 'next/navigation';
+import verify from '@/app/(auth)/verify/otp/verify.module.css';
+import styles from '@/app/(auth)/login/styles.module.css';
 
 type VerifyOTPProps = {
   register: UseFormRegister<any>;
@@ -82,7 +82,7 @@ export default function VerifyOTPInput(): JSX.Element {
     setOTP(['', '', '', '']); // Clear OTP after the timeout
     setIsOtpTimeout(0);
 
-    router.replace('/auth/verify/profile');
+    router.replace('/verify/profile');
   };
 
   return (

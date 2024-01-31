@@ -1,16 +1,4 @@
-type FaqQuestionType = {
-  question: string;
-  answer: string | undefined;
-};
-
-type FaqQuestionUserType = {
-  id: string;
-  name: string;
-  email: string;
-  question: string;
-};
-
-const faqQuestionData: FaqQuestionType[] = [
+const faqQuestionData: FaqQuestion[] = [
   {
     question: 'Bagaimana cara membuat akun di aplikasi ini?',
     answer:
@@ -43,7 +31,7 @@ const faqQuestionData: FaqQuestionType[] = [
   },
 ];
 
-const faqQuestionUserData: FaqQuestionUserType[] = [
+const faqQuestionUserData: FaqQuestionUser[] = [
   {
     id: '1',
     name: 'eybel',

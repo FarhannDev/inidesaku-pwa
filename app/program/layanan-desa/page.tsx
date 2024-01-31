@@ -11,19 +11,20 @@ import { layananDesaData } from '@/utils/data/localDataLayananDesa';
 import SearchBar from '@/components/shared/SearchBar';
 import SearchBarIsEmpty from '@/components/shared/SearchBarIsEmpty';
 import ProgramLayananDesaItemList from './components/ProgramLayananDesaItemList';
+import ProgramLayananDesaButtonFiltered from './components/ProgramLayananDesaButtonFiltered';
 
-export default function Page() {
+export default function LayananDesa() {
   const router: AppRouterInstance = useRouter();
   const searchParams: ReadonlyURLSearchParams = useSearchParams();
   const [searchKeyword, setSearchKeyword] = useState<string>(
     () => searchParams.get('keyword') || ''
   );
 
+  const [selectedLayanan, setSelectedLayanan] = useState<string>('');
+
   useEffect(() => {
-    if (searchKeyword) {
-      router.replace(
-        `/program/layanan-desa?keyword=${searchKeyword?.toString()}`
-      );
+    if (searchKeyword.length) {
+      router.push(`/program/layanan-desa?keyword=${searchKeyword?.toString()}`);
     }
   }, [router, searchKeyword]);
 
@@ -33,9 +34,13 @@ export default function Page() {
     setSearchKeyword(keyword);
   };
 
-  const filteredItem: ProgramLayananDesaType[] = layananDesaData?.filter(
-    (item) => item.title.toLowerCase().includes(searchKeyword?.toLowerCase())
-  );
+  const filteredItem: LayananDesa[] = selectedLayanan
+    ? layananDesaData.filter((item) => item.categories === selectedLayanan)
+    : layananDesaData?.filter((item) =>
+        item.title.toLowerCase().includes(searchKeyword?.toLowerCase())
+      );
+
+  const handleSelectedLayanan = (value: string) => setSelectedLayanan(value);
 
   return (
     <>
@@ -44,6 +49,14 @@ export default function Page() {
         setKeyword={onSearchKeywordChangeHandler}
         placeholder="Cari Layanan Desa"
       />
+
+      {!searchKeyword.length ? (
+        <ProgramLayananDesaButtonFiltered
+          item={selectedLayanan}
+          setItem={handleSelectedLayanan}
+          categories={layananDesaData}
+        />
+      ) : null}
 
       {filteredItem.length ? (
         <ProgramLayananDesaItemList programs={filteredItem} />

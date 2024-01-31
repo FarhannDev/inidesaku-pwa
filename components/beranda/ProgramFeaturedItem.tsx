@@ -2,7 +2,7 @@ import { Button, Card, Stack } from 'react-bootstrap';
 import '@/styles/program-featured.css';
 import Image from 'next/image';
 
-type ProgramFeaturedItemProps = ProgramFeatureType;
+type ProgramFeaturedItemProps = ProgramFeature;
 
 export default function ProgramFeaturedItem({
   name,

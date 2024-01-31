@@ -35,9 +35,9 @@
 .program-featured__description {
   color: var(--Font-600, #5d5d5d);
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   text-align: left;
 }
@@ -61,7 +61,7 @@
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   text-decoration: none;
 }
 

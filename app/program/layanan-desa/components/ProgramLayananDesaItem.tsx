@@ -7,10 +7,9 @@ import { Card, Stack } from 'react-bootstrap';
 import { HiOutlineClock, HiOutlineLocationMarker } from 'react-icons/hi';
 import '../styles/layanan-desa.css';
 
-type ProgramLayananDesaItemProps = ProgramLayananDesaType;
+type ProgramLayananDesaItemProps = LayananDesa;
 
 export default function ProgramLayananDesaItem({
-  id,
   slug,
   title,
   cover,
@@ -32,7 +31,7 @@ export default function ProgramLayananDesaItem({
         <Stack direction="vertical" gap={2}>
           <Link
             className="program-layanan-desa-item__title stretched-link"
-            href={`/program/layanan-desa/${id}`}
+            href={`/program/layanan-desa/${slug}`}
           >
             {title}
           </Link>

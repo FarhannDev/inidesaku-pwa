@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { Card, Col, Row, Stack } from 'react-bootstrap';
-import styles from '@/app/auth/login/styles.module.css';
-import register from '@/app/auth/register/register.module.css';
+import styles from '../../login/styles.module.css';
+import register from '../../register/register.module.css';
 import VerifyOTPInput from '@/components/auth/VerifyOtpInput';
 
 export default function VerifyOTP() {

@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { Card, Col, Row, Stack } from 'react-bootstrap';
-import styles from '@/app/auth/login/styles.module.css';
-import register from './register.module.css';
+import styles from '../login/styles.module.css';
+import register from '../register/register.module.css';
 import RegisterFormInput from '@/components/auth/RegisterFormInput';
 
 export default function Register() {

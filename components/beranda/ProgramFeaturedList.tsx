@@ -8,7 +8,7 @@ import '@/styles/custom-swiper-navigation.css';
 
 import { Navigation } from 'swiper/modules';
 
-type ProgramFeaturedListProps = { programs: ProgramFeatureType[] };
+type ProgramFeaturedListProps = { programs: ProgramFeature[] };
 
 export default function ProgramFeaturedList({
   programs,

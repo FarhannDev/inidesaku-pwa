@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import styles from '@/app/auth/login/styles.module.css';
-import register from '@/app/auth/register/register.module.css';
+import styles from '@/app/(auth)/login/styles.module.css';
+import register from '@/app/(auth)/register/register.module.css';
 import { Button, Form, InputGroup, Stack } from 'react-bootstrap';
 
 export default function RegisterFormInput() {

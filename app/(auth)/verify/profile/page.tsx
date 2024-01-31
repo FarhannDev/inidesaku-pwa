@@ -1,17 +1,18 @@
 'use client';
 
-import Image from 'next/image';
 import { Card, Col, Row, Stack } from 'react-bootstrap';
-import styles from './styles.module.css';
-import LoginFormInput from '@/components/auth/LoginFormInput';
+import Image from 'next/image';
+import styles from '../../login/styles.module.css';
+import register from '../../register/register.module.css';
+import VerifyProfileInput from '@/components/auth/VerifyProfileInput';
 
-export default function Login() {
+export default function VerifyProfile() {
   return (
     <>
       <Row className="justify-content-center">
-        <Col>
+        <Col lg={10}>
           <Card body className={styles.card}>
-            <Row className="justify-content-arround align-self-center align-items-center g-3 py-4">
+            <Row className="justify-content-arround align-self-center align-items-center g-5 py-4">
               <Col lg={12} xl={6} md={12}>
                 <Image
                   src="/images/background_login.png"
@@ -24,11 +25,11 @@ export default function Login() {
               </Col>
               <Col lg={12} xl={6} md={12}>
                 <Stack direction="vertical" gap={3}>
-                  <h1 className={styles.heading}>
-                    Selamat datang, Silahkan isi data di bawah untuk dapat login
-                    ke akun Anda
-                  </h1>
-                  <LoginFormInput />
+                  <h1 className={register.heading}>Lengkapi Data Diri</h1>
+                  <h2 className={register.subheading}>
+                    Selamat datang! Isi detail informasi Anda sekarang
+                  </h2>
+                  <VerifyProfileInput />
                 </Stack>
               </Col>
             </Row>

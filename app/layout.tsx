@@ -1,5 +1,5 @@
-import { fonts } from '@/utils/common/fonts';
 import type { Metadata } from 'next';
+import { fonts } from '@/utils/common/fonts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/navbar.css';
 import '@/styles/globals.css';

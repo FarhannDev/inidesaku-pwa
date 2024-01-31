@@ -10,7 +10,7 @@
   color: var(--Font-400, #8a94a6);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.014px;
   text-transform: capitalize;
@@ -21,7 +21,7 @@
   color: var(--Font-400, #8a94a6);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.014px;
   text-transform: capitalize;

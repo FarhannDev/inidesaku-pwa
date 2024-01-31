@@ -1,8 +1,7 @@
 import generateCreateSlug from '../common/generateCreateSlug';
-import generateUniqueId from '../common/generateUniqueId';
 import { nanoid } from 'nanoid';
 
-const pesonaDesaBeritaData: PesonaNewsType[] = [
+const pesonaDesaBeritaData: PesonaDesaBerita[] = [
   {
     id: `${generateCreateSlug('Indramayu Keren')}_${nanoid()}`,
     slug: generateCreateSlug('Indramayu Keren'),
@@ -149,7 +148,7 @@ const pesonaDesaBeritaData: PesonaNewsType[] = [
   },
 ];
 
-const pesonaDesaBudayaData: PesonaDesaBudayaType[] = [
+const pesonaDesaBudayaData: PesonaDesaBudaya[] = [
   {
     id: `${generateCreateSlug('Nadran Indramayu')}-${nanoid()}`,
     slug: generateCreateSlug('Nadran Indramayu'),

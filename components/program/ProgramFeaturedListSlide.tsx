@@ -8,18 +8,18 @@ import '@/styles/custom-swiper-navigation.css';
 
 import { Navigation } from 'swiper/modules';
 
-type ProgramFeaturedListSlideProps = { programs: ProgramFeatureType[] };
+type ProgramFeaturedListSlideProps = { programs: ProgramFeature[] };
 
 export default function ProgramFeaturedListSlide({
   programs,
 }: ProgramFeaturedListSlideProps) {
   return (
-    <Row className="justify-content-start g-3 ">
+    <Row className="justify-content-start g-3 py-4">
       <Col>
         <div>
           <Swiper
             slidesPerView={1.5}
-            spaceBetween={20}
+            spaceBetween={10}
             grabCursor={true}
             breakpoints={{
               640: {
@@ -40,7 +40,7 @@ export default function ProgramFeaturedListSlide({
               prevEl: '.swiper-button-prev',
             }}
             modules={[Navigation]}
-            className="mySwiper pt-4 position-relative "
+            className="mySwiper  position-relative "
           >
             {programs.map((program) => (
               <SwiperSlide key={program.id}>

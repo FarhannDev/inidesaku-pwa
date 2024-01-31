@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useRouter } from 'next/navigation';
-import profile from '@/app/auth/verify/profile/profile.module.css';
+import profile from '@/app/(auth)/verify/profile/profile.module.css';
 
 export default function VerifyProfileInput() {
   const router = useRouter();
@@ -11,7 +11,7 @@ export default function VerifyProfileInput() {
   ) => {
     e.preventDefault();
 
-    router.replace('/auth/verify/location');
+    router.replace('/verify/location');
   };
 
   return (
