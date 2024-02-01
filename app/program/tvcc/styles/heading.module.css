@@ -1,0 +1,8 @@
+.tvccHeading {
+  color: var(--Font-500, #667085);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 87.5% */
+  letter-spacing: 0.08px;
+}

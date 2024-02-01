@@ -1,0 +1,121 @@
+.card {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.onboardingLoginBtn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-500, #40a752);
+  background: var(--Primary-500, #40a752);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  text-decoration: none;
+}
+
+.onboardingLoginBtn:hover {
+  background: var(--Primary-500, #65c375);
+}
+
+.onboardingLoginBtn:focus {
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.onboardingRegisterBtn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-400, #65c375); /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #65c375;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  text-decoration: none;
+}
+
+.onboardingGuestBtn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  color: var(--Primary-500, #40a752);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  text-decoration: none;
+  text-align: center;
+}
+
+.heading {
+  color: var(--Font-500, #667085);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.subheading {
+  color: var(--Font-400, #8a94a6);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.08px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 320px;
+  height: 248.32px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    font-family: Poppins;
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+}

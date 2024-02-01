@@ -1,0 +1,56 @@
+.profileFormInput {
+  display: flex;
+  width: 100%;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Font-300, #b3b9c6);
+}
+
+.profileFormInput::placeholder {
+  color: var(--Font-400, #8a94a6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+}
+
+.customButtonLogin {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-500, #40a752);
+  background: var(--Primary-500, #40a752);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 100%;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.customButtonLogin:hover {
+  background: var(--Primary-500, #40a752);
+  border: 1px solid var(--Primary-500, #40a752);
+}
+
+.customButtonLogin:focus {
+  background: var(--Primary-500, #40a752) !important;
+  border: 1px solid var(--Primary-500, #40a752) !important;
+}
+
+.customButtonLogin:disabled {
+  border-radius: 8px;
+  border: 1px solid var(--Font-200, #d7dae0);
+  background: var(--Font-200, #d7dae0);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}

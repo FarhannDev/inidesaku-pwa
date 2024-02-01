@@ -1,0 +1,66 @@
+import generateCreateSlug from '../common/generateCreateSlug';
+
+const tvcc: Tvcc[] = [
+  {
+    id: generateCreateSlug('TVCC Indramayu'),
+    slug: generateCreateSlug('TVCC Indramayu'),
+    title: 'TVCC Indramayu',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+  {
+    id: generateCreateSlug('TVCC Indramayu 2'),
+    slug: generateCreateSlug('TVCC Indramayu 2'),
+    title: 'TVCC Indramayu 2',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+  {
+    id: generateCreateSlug('TVCC Indramayu 3'),
+    slug: generateCreateSlug('TVCC Indramayu 3'),
+    title: 'TVCC Indramayu 3',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+  {
+    id: generateCreateSlug('TVCC Indramayu 4'),
+    slug: generateCreateSlug('TVCC Indramayu 4'),
+    title: 'TVCC Indramayu 4',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+  {
+    id: generateCreateSlug('TVCC Indramayu 5'),
+    slug: generateCreateSlug('TVCC Indramayu 5'),
+    title: 'TVCC Indramayu 5',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+  {
+    id: generateCreateSlug('TVCC Indramayu 6'),
+    slug: generateCreateSlug('TVCC Indramayu 6'),
+    title: 'TVCC Indramayu 6',
+    description: '',
+    category: ['kesehatan', 'penjualan', 'pendidikan'],
+    date: new Date().toISOString(),
+    status: 'live',
+    thumbnail: '/images/tvcc/sample_tvcc.png',
+  },
+];
+
+export { tvcc };

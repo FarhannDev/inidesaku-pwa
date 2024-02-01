@@ -1,0 +1,63 @@
+.pesona-news-item {
+  height: 160px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(103, 110, 118, 0.08),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.pesona-news-item__cover {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 12px;
+}
+
+.pesona-news-item__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--Font-600, #565e73);
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+  text-decoration: none;
+}
+
+.pesona-news-item__info {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 6px;
+  color: var(--Font-400, #8a94a6);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 160% */
+  letter-spacing: 0.05px;
+}
+
+.pesona-news-item__info-user {
+  margin-bottom: 6px;
+}
+.pesona-news-item__info-date {
+  margin-bottom: 6px;
+}
+
+.pesona-news-item__info-view {
+  margin-bottom: 6px;
+}
