@@ -1,3 +1,4 @@
+import HeaderTopNavigationMobile from '@/components/navigation/HeaderTopNavigationMobile';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,5 +26,10 @@ export default function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <HeaderTopNavigationMobile title="TVCC" />
+      {children}
+    </>
+  );
 }

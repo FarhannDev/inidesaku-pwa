@@ -1,6 +1,7 @@
 import type { Metadata, ResolvingMetadata } from 'next';
 import { cache } from 'react';
 import { layananDesaData } from '@/utils/data/localDataLayananDesa';
+import HeaderTopNavigationMobile from '@/components/navigation/HeaderTopNavigationMobile';
 
 type Props = {
   params: { id: string };
@@ -39,5 +40,10 @@ export default function Layout({
   params: { id: string };
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <HeaderTopNavigationMobile title="Detail Pelayanan Desa" />
+      {children}
+    </>
+  );
 }

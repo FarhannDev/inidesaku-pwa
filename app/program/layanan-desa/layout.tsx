@@ -1,3 +1,4 @@
+import HeaderTopNavigationMobile from '@/components/navigation/HeaderTopNavigationMobile';
 import type { Metadata } from 'next';
 import { Container } from 'react-bootstrap';
 
@@ -27,6 +28,9 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <Container className="position-relative py-5 mt-5">{children}</Container>
+    <>
+      <HeaderTopNavigationMobile title="Pelayanan Desa" />
+      <Container className="position-relative py-5 mt-5">{children}</Container>
+    </>
   );
 }

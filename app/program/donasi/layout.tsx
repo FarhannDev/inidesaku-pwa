@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import HeaderTopNavigationMobile from '@/components/navigation/HeaderTopNavigationMobile';
 
 export const metadata: Metadata = {
   title: 'Program Donasi -  Inidesaku',
@@ -25,5 +26,10 @@ export default function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <HeaderTopNavigationMobile title="Donasi" />
+      {children}
+    </>
+  );
 }

@@ -57,7 +57,7 @@ export default function HeaderTopNavigation() {
     ));
 
   return (
-    <Navbar expand="lg" fixed="top">
+    <Navbar expand="lg" fixed="top" className="d-none d-xl-block d-lg-block">
       <Container>
         <Navbar.Brand href="/">
           <Image

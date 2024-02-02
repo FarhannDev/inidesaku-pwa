@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumb, Container } from 'react-bootstrap';
 import Link from 'next/link';
 import BreadcrumbItem from '@/components/shared/BreadcrumbItem';
+import HeaderTopNavigationMobile from '@/components/navigation/HeaderTopNavigationMobile';
 
 export const metadata: Metadata = {
   title: 'Pesona  Desa -  Inidesaku',
@@ -48,9 +49,12 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <Container className="position-relative py-5 mt-5">
-      <BreadcrumbItem menus={breadcrumbItem} />
-      {children}
-    </Container>
+    <>
+      <HeaderTopNavigationMobile title="Pesona Desa" />
+      <Container className="position-relative py-5 mt-5">
+        <BreadcrumbItem menus={breadcrumbItem} />
+        {children}
+      </Container>
+    </>
   );
 }
